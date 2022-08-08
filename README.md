@@ -47,14 +47,28 @@ With npm
 
 #1
 
-    import {getEmsg} from 'emsg'
+    import emsg from 'emsg'
 
 #2
 
-    CONST {getEmsg} = require('emsg')
+    const emsg = require('emsg')
+
 
 
 ## How to use
 
-    axios.post('/some-url').catch(e => alert(getEmsg(e))) // You can use a modal, notification or other component to display the error message.
+There are multiple functions.
+
+You can use 
+
+
+* getData(e) // Get the data out of the error from an http request
+* getErrors(e) // Get the errors array (if any)
+* getMsg(e) // Get the first message availablle.
+
+
+Example:
+
+    
+    axios.post('/some-url').catch(e => alert(emsg.getMsg(e))) // You can use a modal, notification or other component to display the error message.
 
