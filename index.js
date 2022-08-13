@@ -5,7 +5,6 @@ function getErrors(e) {
     return getData(e)?.errors || []
 }
 
-
 function getMsg(e) {
     const data = getData(e)
     const errors = getErrors(e)
@@ -19,7 +18,7 @@ function getMsg(e) {
 }
 
 
-module.exports = {
+export {
     getData,
     getMsg,
     getErrors
