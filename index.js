@@ -27,7 +27,7 @@ function getMsg(e) {
 }
 
 
-export default {
+module.exports = {
     getData,
     getMsg,
     getErrors
