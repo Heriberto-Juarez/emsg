@@ -1,10 +1,14 @@
 {
-  "name": "emsg",
-  "version": "1.0.2",
-  "description": "Get an error message from an http request",
-  "main": "dist/main.js",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -24,8 +28,4 @@
     "url": "https://github.com/Heriberto-Juarez/emsg/issues"
   },
   "homepage": "https://github.com/Heriberto-Juarez/emsg#readme",
-  "devDependencies": {
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
-  }
 }

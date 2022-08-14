@@ -49,12 +49,6 @@ With npm
 
     import emsg from 'emsg'
 
-#2
-
-    const emsg = require('emsg')
-
-
-
 ## How to use
 
 There are multiple functions.
